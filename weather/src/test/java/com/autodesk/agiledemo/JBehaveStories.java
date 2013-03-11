@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 import com.thoughtworks.selenium.condition.ConditionRunner;
-
+import static java.util.Arrays.asList;
 public abstract class JBehaveStories extends JUnitStories {
 
 	protected Selenium selenium;
@@ -104,6 +104,11 @@ public abstract class JBehaveStories extends JUnitStories {
 
 	}
 
-	abstract protected Object getSteps();
-	abstract protected List<String> getStories();
+	protected Object getSteps(){
+		return this;
+	}
+	
+	protected List<String> getStories(){
+		return asList("**/*.story");
+	}
 }
