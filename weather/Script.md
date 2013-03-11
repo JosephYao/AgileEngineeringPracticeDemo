@@ -8,5 +8,6 @@ Here is what we initially have before we start the demo:
 * WeatherPage.java
 * index.jsp
 * web.xml
+* new_orleans_weather.xml
 
 >	mvn verify
