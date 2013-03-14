@@ -53,3 +53,18 @@ Here is what we will add in step 4:
 >	Copy code of WeatherParser and Weather and run UT and pass.
 >	git add and commit
 
+#Step 5
+
+Here is what we will add or update in step 5:
+
+*	index.jsp
+*	WeatherPage.java
+*	WeatherTest.java
+
+>	uncomment JSP code
+>	mvn test jetty:run, manual test
+>	Explain and copy WeatherPage.java
+>	Explain and copy WeatherTest.java
+>	mvn verify
+>	git add and commit
+>	git push and CI run and pass

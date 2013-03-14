@@ -14,4 +14,17 @@ public class WeatherPage extends SeleniumPage  {
     public void open(){
     	open("/");
     }
- }
+    
+    public void typeInZip(String zipcode){
+    	type("zip", zipcode);
+    }
+    
+    public void clickSubmit(){
+    	clickButton("submit");
+        waitForPageToLoad();
+    }
+	
+	public String getFieldId(String field){
+		return field.replaceAll(" ", "-").toLowerCase()+"-value";
+	}
+}
