@@ -7,7 +7,7 @@ Here is what we initially have before we start the demo:
 *	final JBehaveStories.java
 *	Pages.java
 *	WeatherPage.java
-*	index.jsp
+*	index.jsp (final jsp but comment body)
 *	web.xml
 *	new_orleans_weather.xml
 
@@ -38,3 +38,18 @@ Here is what we will add in step 3:
 >	Explain and copy TestWeatherRetriever.java
 >	Make compile pass by adding empty WeatherRetriever class (creating the src/main/java folder). Run UT and fail.
 >	Copy code of WeatherRetriever and run UT and pass.
+>	git add and commit
+
+#Step 4
+
+Here is what we will add in step 4:
+
+*	TestWeatherParser.java
+*	WeatherParser.java
+*	Weather.java
+
+>	Explain and copy TestWeatherParser.java
+>	Make compile pass by adding empty WeatherParser and Weather class. Need to manually add missing methods. Run UT and fail.
+>	Copy code of WeatherParser and Weather and run UT and pass.
+>	git add and commit
+
