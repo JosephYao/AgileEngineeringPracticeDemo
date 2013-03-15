@@ -1,5 +1,6 @@
 package com.autodesk.agiledemo;
 
+import static java.util.Arrays.asList;
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.core.reporters.Format.HTML;
@@ -26,13 +27,10 @@ import org.jbehave.web.selenium.SeleniumContext;
 import org.jbehave.web.selenium.SeleniumScreenshotOnFailure;
 import org.jbehave.web.selenium.SeleniumStepMonitor;
 import org.jbehave.web.selenium.SeleniumSteps;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 import com.thoughtworks.selenium.condition.ConditionRunner;
-import static java.util.Arrays.asList;
 public abstract class JBehaveStories extends JUnitStories {
 
 	protected Selenium selenium;
@@ -41,7 +39,6 @@ public abstract class JBehaveStories extends JUnitStories {
 	
 	private ConditionRunner conditionRunner;
 	private SeleniumContext seleniumContext;
-	private final Logger logger = LoggerFactory.getLogger(JBehaveStories.class);
 	
 	public JBehaveStories(){
 		
@@ -58,8 +55,6 @@ public abstract class JBehaveStories extends JUnitStories {
 					testProp.getProperty("target.url"));
 			
 		} catch (IOException e) {
-			logger.warn("test.properties not exist or is invalid.");
-			
 			// give some default value
 			this.selenium = new DefaultSelenium("localhost", 4444,
 					"*firefox",
