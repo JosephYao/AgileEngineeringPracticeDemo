@@ -68,3 +68,19 @@ Here is what we will add or update in step 5:
 >	mvn verify
 >	git add and commit
 >	git push and CI run and pass
+
+#Step 6
+
+Here is what we will add or update in step 6:
+
+*	i_can_get_wearing_advice.story
+*	TestWeather.java
+*	Weather.java
+
+>	Explain and copy i_can_get_wearing_advice.story
+>	mvn verify and BDD case fail
+>	TDD Weather.getWearingAdvice()
+>	update index.jsp to add wearing advice display
+>	mvn verify and pass
+>	git commit
+>	git push and CI run and pass
